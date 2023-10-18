@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Add Product</title>
+      <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+   </head>
+   <body>
+      <h3>Product form</h3>
+      <form action="http://127.0.0.1:5000/add" method="POST" enctype="multipart/form-data" id="form-container">
+         <label for="name">Product Name</label>
+         <input type="text" name="name" placeholder="name...">
+         <label for="description">Description</label>
+         <input type="text" name= "description" placeholder="description...">
+         <label for="category">Category</label>
+         <input type="text" name="category" placeholder="category..">
+         <label for="imageFile">Image</label>
+         <input type="file" id="uploadImage" name="imageFile">
+         <button type="submit" class="btn">Add</button>
+      </form>
+   </body>
+</html>
